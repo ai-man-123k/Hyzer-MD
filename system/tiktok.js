@@ -6,7 +6,7 @@ async function tiktok(query) {
     data: new URLSearchParams(Object.entries({ query })),
   });
   let result = {
-    creator: "HyzerDev",
+    creator: "Aiman",
     title: clean(response.data.desc),
     author: clean(response.data.author),
     nowm: await shortener((response.data.links[0].a || "").replace("https", "http")),
